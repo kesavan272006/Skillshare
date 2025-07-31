@@ -1,15 +1,15 @@
-# SkillShare 🎓
+# SkillShare 
 
 A modern micro skill-sharing platform built with React and Firebase.
 
 ---
 
-## ✨ Overview
+##  Overview
 SkillShare is a web app where anyone can create, join, and discover live micro-skill sessions. Whether you want to teach, learn, or just explore new skills, SkillShare makes it easy and beautiful.
 
 ---
 
-## 🚀 Features
+##  Features
 - **Landing Page:** Modern, responsive, and inviting.
 - **Authentication:** Google sign-in with Firebase Auth.
 - **Personalized Home:** Greeted by your username, search/filter sessions, and see your dashboard.
@@ -22,7 +22,7 @@ SkillShare is a web app where anyone can create, join, and discover live micro-s
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 - **Frontend:** React (with hooks), React Router DOM
 - **Backend:** Firebase (Firestore & Auth)
 - **AI Integration:** Google Gemini API (via REST)
@@ -30,7 +30,7 @@ SkillShare is a web app where anyone can create, join, and discover live micro-s
 
 ---
 
-## 🏁 Getting Started
+##  Getting Started
 
 ### 1. **Clone the repository**
 ```bash
@@ -104,18 +104,18 @@ src/
 
 ---
 
-## 🤖 AI Tag Suggestion
+##  AI Tag Suggestion
 - When creating or editing a session, click **"Suggest Tags with AI"** below the tags field.
 - The app will use Gemini to suggest relevant tags based on your title and description.
 
 ---
 
-## ✍️ About This Project
+##  About This Project
 SkillShare was built to make learning and teaching micro-skills accessible, social, and fun. The UI is designed to be clean, modern, and inviting, with a focus on usability and mobile-friendliness. AI integration makes it even easier for users to create high-quality sessions.
 
 ---
 
-## 📣 Credits
+##  Credits
 - UI/UX: Custom CSS, inspired by modern web design
 - AI: Google Gemini API
 - Auth & DB: Firebase
