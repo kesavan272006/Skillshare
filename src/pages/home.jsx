@@ -16,19 +16,25 @@ const Home = () => {
   const [difficulty, setDifficulty] = useState('All');
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const fetchUsername = async () => {
-      if (auth.currentUser) {
-        const userRef = doc(collection(database, 'Users'), auth.currentUser.uid);
-        const userSnap = await getDoc(userRef);
-        if (userSnap.exists()) {
-          setUsername(userSnap.data().username || 'User');
-        } else {
-          setUsername(auth.currentUser.displayName || 'User');
-        }
-      }
-    };
-    fetchUsername();
-  }, []);
+        const fetchUserData = async () => {
+          const currentUser = auth.currentUser;
+    
+          if (currentUser) {
+            const userRef = doc(database, "Users", currentUser.uid);
+            const userSnap = await getDoc(userRef);
+            if (userSnap.exists()) {
+              const userData = userSnap.data();
+              setUsername(userData.username || 'No Username');
+            } else {
+              navigate("/signin");
+            }
+          } else {
+            navigate("/signin");
+          }
+        };
+    
+        fetchUserData();
+      }, [navigate]);
   useEffect(() => {
     const fetchSessions = async () => {
       setLoading(true);
