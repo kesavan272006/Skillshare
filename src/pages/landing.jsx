@@ -56,7 +56,7 @@ const LandingPage = () => {
             Join thousands of learners and teachers in our micro skill-sharing community. Create sessions, discover new talents, and grow together.
           </p>
           <div className="hero-buttons">
-            <button className="primary-btn">Get Started Free</button>
+            <button onClick={()=>navigate('/signin')} className="primary-btn">Get Started Free</button>
             <button className="secondary-btn">Watch Demo</button>
           </div>
         </div>
